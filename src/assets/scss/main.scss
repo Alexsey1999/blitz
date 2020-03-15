@@ -1,0 +1,124 @@
+@import "utils/mixins";
+@import "utils/vars";
+@import "utils/libs";
+@import "utils/fonts";
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily:'Montserrat', Helvetica, Arial, sans-serif;
+//</Шрифт по умолчанию>==========================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+*{padding: 0px;margin: 0px;border: 0px;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+aside,nav,footer,header,section{display: block;}
+html,body{height: 100%;margin: 0;padding: 0;min-width: $minwidth;position: relative;width: 100%;color: #000;}
+body{font-size: 100%;line-height: 1;font-size: 14px;font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
+	&.lock{overflow: hidden;
+		@media (max-width:$md3+px){
+			width: 100%;
+			position: fixed;
+			overflow: hidden;
+		}
+	}
+}
+input,button,textarea{font-family: $fontfamily;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top; max-width: 100%;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper{width: 100%;min-height: 100%;overflow: hidden;
+	&.loaded{}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container{max-width:$mw+px;margin: 0 auto;width: 100%;
+	@media (max-width:$md1+px){max-width: 970px;}
+	@media (max-width:$md2+px){max-width: 750px;}
+	@media (max-width:$md3+px){max-width: none;padding:0 10px;}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.block {
+	// .block__tabs
+	&__tabs {}
+	// .block__nav
+	&__nav {}
+	// .block__navitem
+	&__navitem {
+		cursor: pointer;
+		&.active{
+			color: red;
+		}
+	}
+	// .block__items
+	&__items {}
+	// .block__item
+	&__item {}
+}
+
+
+.spollers {
+	// .spollers__item
+	&__item {}
+	// .spollers__title
+	&__title {
+		cursor: pointer;
+		&.active{
+			color: red;
+		}
+	}
+	// .spollers__text
+	&__text {
+		display: none;
+		padding: 10px 0px 0px 0px;
+	}
+}
+
+.block {
+	// .block__form
+	&__form {}
+}
+.form-block {
+	// .form-block__item
+	&__item {
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+.block {
+	// .block__gallery
+	&__gallery {}
+}
+.gallery-block {
+	// .gallery-block__item
+	&__item {
+		display: inline-block;
+		width: 100px;
+		img{max-width: 100%;}
+	}
+}
+
+.block__map{
+	height: 500px;
+}
+
+.sector{
+	height: 700px;
+}
+
+//===================================================================================================================
+
+// Modules:
+// example: @import "modules/my-module.scss";
+// @import "./pages/header.scss";
