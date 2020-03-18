@@ -61,6 +61,24 @@
       text-transform: uppercase;
     }
   }
+
+  &__title {
+    color: #474747;
+    font-family: Bebas;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 10px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__description {
+    color: #474747;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
 }
 
 .main-slider {
@@ -84,4 +102,25 @@
     }
 
 
+}
+
+.slider-bottom-section {
+    margin: 0px 0px 65px 0px;
+    @media (max-width: 768px) {
+      margin: 0px 0px 40px 0px;
+     }
+     @media (max-width: 480px) {
+      margin: 0px 0px 20px 0px;
+    }
+}
+
+.slider-section__bottom-text {
+  background-color: #fbfbfb;
+  padding-left: 20px;
+  @media (max-width: 768px) {
+    padding-left: 5px;
+  }
+  @media (max-width: 480px) {
+    padding-left: 0px;
+  }
 }
