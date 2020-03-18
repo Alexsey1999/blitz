@@ -4,7 +4,7 @@
 @import "utils/fonts";
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontfamily:'Montserrat', Helvetica, Arial, sans-serif;
+$fontfamily:'HelveticaNeue', Helvetica, Arial, sans-serif;
 //</Шрифт по умолчанию>==========================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -13,7 +13,7 @@ $fontfamily:'Montserrat', Helvetica, Arial, sans-serif;
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 aside,nav,footer,header,section{display: block;}
-html,body{height: 100%;margin: 0;padding: 0;min-width: $minwidth;position: relative;width: 100%;color: #000;}
+html,body{height: 100%;margin: 0;padding: 0;min-width: $minwidth;position: relative;width: 100%;color: #414141;}
 body{font-size: 100%;line-height: 1;font-size: 14px;font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
 	&.lock{overflow: hidden;
 		@media (max-width:$md3+px){
@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //</ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
-.container{max-width:$mw+px;margin: 0 auto;width: 100%;
+.container{max-width:$mw+px;margin: 0 auto;
 	@media (max-width:$md1+px){max-width: 970px;}
 	@media (max-width:$md2+px){max-width: 750px;}
 	@media (max-width:$md3+px){max-width: none;padding:0 10px;}
@@ -121,4 +121,5 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 
 // Modules:
 // example: @import "modules/my-module.scss";
-// @import "./pages/header.scss";
+@import "./pages/header.scss";
+@import "./pages/slider-section.scss";

@@ -1,6 +1,28 @@
-/* Fonts:
+/* Fonts: */
 
+@font-face {
+	font-family: 'bebas';
+	src: url('/assets/fonts/Bebas/bebas.eot');
+	src: local('☺'), url('/assets/fonts/Bebas/bebas.woff') format('woff'), url('/assets/Bebas/fonts/bebas.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('/assets/HelveticaNeue/HelveticaNeueCyr-Medium.eot');
+	src: local('☺'), url('/assets/fonts/HelveticaNeue/HelveticaNeueCyr-Medium.woff') format('woff'), url('/assets/HelveticaNeue/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('/assets/fonts/HelveticaNeue/HelveticaNeueCyr-Roman.eot');
+	src: local('☺'), url('/assets/fonts/HelveticaNeue/HelveticaNeueCyr-Roman.woff') format('woff'), url('/assets/fonts/HelveticaNeue/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
 
 
 /*
