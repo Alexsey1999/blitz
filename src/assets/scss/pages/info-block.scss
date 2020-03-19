@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 60px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
   }
 }
 .info-block {
