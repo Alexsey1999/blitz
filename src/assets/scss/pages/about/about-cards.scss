@@ -1,0 +1,46 @@
+.about-cards {
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 55px -15px;
+    @media (max-width: 992px) {
+      margin: 0 -15px 15px -15px;
+    }
+  }
+
+  &__column {
+    flex: 0 1 33.3333%;
+    margin: 0px 0px 25px 0px;
+    padding: 0 15px;
+    @media (max-width: 992px) {
+      flex: 0 1 1000%;
+    }
+  }
+
+  &__title {
+    color: #474747;
+    font-family: Bebas;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    color: #9e9d9d;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  &__text {
+    color: #474747;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
